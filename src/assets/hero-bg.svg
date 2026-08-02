@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMin slice">
+  <defs>
+    <radialGradient id="glowAccent" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#d97650" stop-opacity="0.30"/>
+      <stop offset="45%" stop-color="#d97650" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#d97650" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowCool" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3d6fb4" stop-opacity="0.22"/>
+      <stop offset="55%" stop-color="#3d6fb4" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#3d6fb4" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowWarmSoft" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f0b9a0" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#f0b9a0" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="56" height="56" patternUnits="userSpaceOnUse">
+      <path d="M56 0H0V56" fill="none" stroke="#2a3441" stroke-width="1" opacity="0.5"/>
+    </pattern>
+    <linearGradient id="fadeDown" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.9"/>
+      <stop offset="55%" stop-color="#fff" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <mask id="gridMask">
+      <rect width="1600" height="900" fill="url(#fadeDown)"/>
+    </mask>
+  </defs>
+
+  <!-- faint blueprint grid, fading out toward the fold -->
+  <rect width="1600" height="900" fill="url(#grid)" mask="url(#gridMask)"/>
+
+  <!-- layered ambient glows -->
+  <ellipse cx="1220" cy="140" rx="640" ry="420" fill="url(#glowAccent)"/>
+  <ellipse cx="140" cy="620" rx="560" ry="400" fill="url(#glowCool)"/>
+  <ellipse cx="760" cy="-80" rx="700" ry="300" fill="url(#glowWarmSoft)"/>
+
+  <!-- fine accent ring, off-canvas right for depth -->
+  <circle cx="1330" cy="180" r="290" fill="none" stroke="#d97650" stroke-opacity="0.14" stroke-width="1.5"/>
+  <circle cx="1330" cy="180" r="380" fill="none" stroke="#d97650" stroke-opacity="0.07" stroke-width="1"/>
+
+  <!-- scattered accent dots -->
+  <g fill="#d97650">
+    <circle cx="220" cy="170" r="2.5" opacity="0.45"/>
+    <circle cx="480" cy="90" r="2" opacity="0.3"/>
+    <circle cx="1040" cy="60" r="2" opacity="0.35"/>
+    <circle cx="1490" cy="420" r="2.5" opacity="0.4"/>
+    <circle cx="90" cy="380" r="2" opacity="0.3"/>
+  </g>
+</svg>
