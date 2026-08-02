@@ -27,9 +27,9 @@ export default function Hero() {
     <section className="hero" id="top">
       <div className="hero-text">
         <span className="level-badge">Tutorial</span>
-        <p className="hero-eyebrow">Beginner friendly · No SDK required · ~5 minutes</p>
+        <p className="hero-eyebrow">Step by step · Beginner friendly · ~5 minutes</p>
         <h1>
-          Build your first Claude Skill, <span className="accent">step by step</span>
+          Build your first <span className="accent">Claude Skill</span>
         </h1>
         <p className="hero-sub">
           In this hands-on tutorial you'll teach Claude a brand-new skill using a single{' '}
